@@ -1,10 +1,10 @@
 function scuberGreetingForFeet(amount) {
-  if (amount >= 400) {
+  if (amount <= 400) {
     return "This one is on me!"
 
   }
 
-  else if (amount >2000)
+  else if (amount > 2000 && amount < 2500)
   {
     return "I will gladly take your thirty bucks."
   }
@@ -32,14 +32,16 @@ function switchOnCharmFromTip(tip) {
       return "Thank you so much."
       break;
 
-    case  "not as generous":
-      return "Thank you"
+    case "not as generous":
+      return "Thank you."
       break;
 
-    case "thanks for everything":
-      return "Bye";
+    default:
+      return "Bye.";
 
 
   }
 
 }
+
+console.log(scuberGreetingForFeet(2501));
